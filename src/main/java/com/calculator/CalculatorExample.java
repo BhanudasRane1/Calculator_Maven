@@ -12,6 +12,7 @@ public class CalculatorExample {
 		Scanner sc = new Scanner(System.in);
 		final Logger logger =LoggerFactory.getLogger(CalculatorExample.class);
 		logger.info("Hello I am a Calculator");
+		logger.info("Do Your Calculation");
 		
 		char sym;
 		do {
