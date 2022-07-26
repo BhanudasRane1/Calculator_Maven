@@ -13,7 +13,7 @@ public class Main {
 		int num1,num2,res;
 		Scanner sc = new Scanner(System.in);
 		final Logger logger =LoggerFactory.getLogger(Main.class);
-		logger.info("Hello Calculator");
+		logger.info("Hello Calculator...");
 		CalculatorExample cal = new CalculatorExample();
 		
 		char sym;
