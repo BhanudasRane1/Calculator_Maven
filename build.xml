@@ -9,6 +9,7 @@
 	
 	<path id="master-classpath">
 		<pathelement path = "src/main/java/lib/hamcrest-2.2.jar" />
+		<pathelement path = "src/main/java/lib/hamcrest-2.2.jar" />
 	     <pathelement path = "src/main/java/lib/junit-4.13.2.jar" />
 		 <pathelement path = "src/main/java/lib/slf4j-api-1.7.25.jar" />
 	     <pathelement path = "src/main/java/lib/slf4j-simple-1.7.25.jar" />
@@ -29,10 +30,8 @@
 			<junit haltonfailure="false" printsummary="true">
 	            <classpath refid = "master-classpath" /> 
 				<formatter type="brief" usefile="plain"/>
-	            <test name="com.bhanudastest.AddTest" />
-				<test name="com.bhanudastest.SubstractTest" />
-				<test name="com.bhanudastest.MultiplyTest" />
-				<test name="com.bhanudastest.DivisionTest" />
+	            <test name="com.bhanudastest.CalculationTest" />
+				
 	        </junit>
 	</target>
 	
@@ -43,7 +42,7 @@
        	<jar destfile="target/ant.jar" basedir="${build-folder}" excludes="**/*Test.class">
        	  <zipgroupfileset dir="src/main/java/lib" includes="*.jar" />
             <manifest>
-                <attribute name="Main-Class" value="com.calculator.CalculatorExample"/>
+                <attribute name="Main-Class" value="com.calculator.Main"/>
             </manifest>
         </jar>
 	</target>

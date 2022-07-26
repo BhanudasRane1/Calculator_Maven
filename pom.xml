@@ -60,7 +60,7 @@
 	      <configuration>
 	        <archive>
 	          <manifest>
-	            <mainClass>com.calculator.CalculatorExample</mainClass>
+	            <mainClass>com.calculator.Main</mainClass>
 	          </manifest>
 	        </archive>
 	        <descriptorRefs>
